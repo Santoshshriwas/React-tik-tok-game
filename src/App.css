@@ -1,0 +1,85 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #282c34;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  color: #000;
+  font-size: 54px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  line-height: 100px;
+  border: 1px solid #999;
+  transition: all 0.2s ease;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #ff9a9e, #fad0c4, #fad0c4, #ffecd2, #fcb69f);
+}
+
+.square:hover {
+  background: linear-gradient(145deg, #ffecd2, #fad0c4, #ff9a9e, #fcb69f, #fad0c4);
+}
+
+@media (max-width: 600px) {
+  .square {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 36px;
+    color: #000;
+  }
+}
+
+@media (max-width: 400px) {
+  .square {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+    color: #000;
+  }
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #61dafb;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #21a1f1;
+}
+
+div {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #fff;
+}
